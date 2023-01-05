@@ -83,17 +83,17 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Yins management bot [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
+✪ ɪ'ᴍ ᴀɴ ᴄɪᴀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
 ────────────────────────
 × *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+× `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+✪ ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Yins Robot", callback_data="yins_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴄɪᴀ ʀᴏʙᴏᴛ", callback_data="yins_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Yins To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ ᴀᴅᴅ ᴄɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @AyiinXd \
+ You can support the project by contacting @itsdaps \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -382,7 +382,7 @@ def yins_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="yins_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/AyiinXd/YinsRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/Icalp/Vi-Robot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="yins_back"),
@@ -435,14 +435,14 @@ def yins_about_callback(update, context):
         )
     elif query.data == "yins_support":
         query.message.edit_text(
-            text="*๏ Yins support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Yins.",
+            text="*๏ Cia support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Cia.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/AyiinXdSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/AyiinSupport"),
+                    InlineKeyboardButton(text="Support", url="t.me/privatedap"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/projectdaps"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="yins_"),
