@@ -37,7 +37,7 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[YinsRobot]')
+LOGGER = logging.getLogger('[Vi-Robot]')
 LOGGER.info("Yins is starting. | An Ayiin Support Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
 LOGGER.info("Project maintained by: github.com/AyiinXd (t.me/AyiinXd)")
@@ -214,9 +214,9 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(1700405732)
+DRAGONS.add(1230443490)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1700405732)
+DEV_USERS.add(1230443490)
 
 if not SPAMWATCH_API:
     sw = None
